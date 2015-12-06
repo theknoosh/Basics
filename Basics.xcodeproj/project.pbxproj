@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3663944B1C1249F900CBAB13 /* CustomSCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3663944A1C1249F900CBAB13 /* CustomSCNNode.swift */; };
+		3663944D1C124D6E00CBAB13 /* GeometryNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3663944C1C124D6E00CBAB13 /* GeometryNodes.swift */; };
 		36F763171C0E5F5D0004B010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F763161C0E5F5D0004B010 /* AppDelegate.swift */; };
 		36F763191C0E5F5D0004B010 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F763181C0E5F5D0004B010 /* art.scnassets */; };
 		36F7631B1C0E5F5D0004B010 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7631A1C0E5F5D0004B010 /* GameViewController.swift */; };
@@ -14,6 +16,7 @@
 		36F763201C0E5F5D0004B010 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F7631F1C0E5F5D0004B010 /* Images.xcassets */; };
 		36F763231C0E5F5D0004B010 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F763211C0E5F5D0004B010 /* LaunchScreen.xib */; };
 		36F7632F1C0E5F5E0004B010 /* BasicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7632E1C0E5F5E0004B010 /* BasicsTests.swift */; };
+		36F763391C0F7CA20004B010 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F763381C0F7CA20004B010 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3663944A1C1249F900CBAB13 /* CustomSCNNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSCNNode.swift; sourceTree = "<group>"; };
+		3663944C1C124D6E00CBAB13 /* GeometryNodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometryNodes.swift; sourceTree = "<group>"; };
 		36F763111C0E5F5D0004B010 /* Basics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F763151C0E5F5D0004B010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36F763161C0E5F5D0004B010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 		36F763281C0E5F5E0004B010 /* BasicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F7632D1C0E5F5E0004B010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36F7632E1C0E5F5E0004B010 /* BasicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsTests.swift; sourceTree = "<group>"; };
+		36F763381C0F7CA20004B010 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		36F763131C0E5F5D0004B010 /* Basics */ = {
 			isa = PBXGroup;
 			children = (
+				36F763381C0F7CA20004B010 /* GameScene.swift */,
 				36F763161C0E5F5D0004B010 /* AppDelegate.swift */,
 				36F763181C0E5F5D0004B010 /* art.scnassets */,
 				36F7631A1C0E5F5D0004B010 /* GameViewController.swift */,
@@ -86,6 +93,8 @@
 				36F7631F1C0E5F5D0004B010 /* Images.xcassets */,
 				36F763211C0E5F5D0004B010 /* LaunchScreen.xib */,
 				36F763141C0E5F5D0004B010 /* Supporting Files */,
+				3663944A1C1249F900CBAB13 /* CustomSCNNode.swift */,
+				3663944C1C124D6E00CBAB13 /* GeometryNodes.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -159,7 +168,9 @@
 		36F763091C0E5F5D0004B010 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Sanctuary of Darkness";
 				TargetAttributes = {
 					36F763101C0E5F5D0004B010 = {
@@ -216,8 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F763391C0F7CA20004B010 /* GameScene.swift in Sources */,
 				36F7631B1C0E5F5D0004B010 /* GameViewController.swift in Sources */,
+				3663944D1C124D6E00CBAB13 /* GeometryNodes.swift in Sources */,
 				36F763171C0E5F5D0004B010 /* AppDelegate.swift in Sources */,
+				3663944B1C1249F900CBAB13 /* CustomSCNNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +294,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -348,6 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Basics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SanctuaryofDarkness.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -358,6 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Basics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SanctuaryofDarkness.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -376,6 +393,7 @@
 				);
 				INFOPLIST_FILE = BasicsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SanctuaryofDarkness.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Basics.app/Basics";
 			};
@@ -391,6 +409,7 @@
 				);
 				INFOPLIST_FILE = BasicsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SanctuaryofDarkness.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Basics.app/Basics";
 			};
@@ -415,6 +434,7 @@
 				36F763341C0E5F5E0004B010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36F763351C0E5F5E0004B010 /* Build configuration list for PBXNativeTarget "BasicsTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +443,7 @@
 				36F763371C0E5F5E0004B010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
